@@ -29,7 +29,7 @@ export class GoogleAuthWeb extends WebPlugin implements GoogleAuthPlugin {
     script.async = true;
     script.id = scriptId;
     script.onload = this.platformJsLoaded.bind(this);
-    script.src = 'https://web.jadvalonline.com/google-platform.js';
+    script.src = 'https://accounts.google.com/gsi/client';
     head.appendChild(script);
   }
 
